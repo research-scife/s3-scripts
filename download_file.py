@@ -28,14 +28,9 @@ def main(report_date):
 		print(file['Key'])
 		client.download_file(bucket_name, file['Key'], os.path.split(file['Key'])[-1])
 
-	# print(json.dumps(response, indent=4))
-	# print(s3_prefix)
-
-	# s3.meta.client.download_file('mybucket', 'hello.txt', '/tmp/hello.txt')
 	return
 
 
 if __name__ == '__main__':
-	# export AWS_PROFILE=sourav-mac
 	main()
 

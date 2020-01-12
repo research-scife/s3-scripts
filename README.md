@@ -19,8 +19,9 @@ pip install -r requirements.txt
 
 # Set the environment variables :
 
-We will share two envornment variables, `scife_bucket` and `scife_client_folder` please set them before executing the script.
+We will share two envornment variables, `scife_client_bucket` and `scife_client_folder` please set them before executing the script.
 
+For download set `scife_read_bucket` and `scife_read_folder` envornment variable. We will share them as well.
 
 # Sample run command to upload the file:
 

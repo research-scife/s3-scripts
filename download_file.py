@@ -7,7 +7,7 @@ import json
 
 
 @click.command()
-@click.option('--report_date', default=None, help='Latest complete UTC date in the format 2019-12-24')
+@click.option('--report_date', default=None, help='Latest complete UTC date in the format YYYY/MM/DD')
 def main(report_date):
 
 

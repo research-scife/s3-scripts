@@ -25,7 +25,7 @@ def upload_file_to_s3(bucket_name, key, file_path):
 
 @click.command()
 @click.option('--file_path', default=None, help='File path of pnl file')
-@click.option('--report_date', default=None, help='Latest complete UTC date in the format 2019-12-24')
+@click.option('--report_date', default=None, help='Latest complete UTC date in the format YYYY/MM/DD')
 def main(file_path, report_date):
 	file_name = os.path.split(file_path)[-1]
 

@@ -30,7 +30,7 @@ def main(file_path, report_date):
 	file_name = os.path.split(file_path)[-1]
 
 	bucket_name = os.environ['scife_bucket']
-	s3_key = f"{os.environ['scife_folder']}/{report_date}/{file_name}"
+	s3_key = f"{os.environ['scife_client_folder']}/{report_date}/{file_name}"
 	# print(s3_key)
 	# print(file_path)
 	upload_file_to_s3(bucket_name, s3_key, file_path)
